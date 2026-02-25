@@ -1,0 +1,24 @@
+body {
+  background-color: #f0f0f0;
+  color: rgb(2, 2, 68);
+}
+
+div.page-container {
+  display: flex;
+  flex-direction: column;
+}
+
+li a {
+  text-decoration: none;
+  color: #007bff;
+}
+
+li a:hover {
+  text-decoration: underline;
+}
+
+a.back-link {
+  margin-top: 20px;
+  text-decoration: none;
+  color: #007bff;
+}
