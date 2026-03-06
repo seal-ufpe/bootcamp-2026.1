@@ -1,3 +1,130 @@
+import { useState, useEffect } from "react";
+
+const githubURL = "https://github.com/Ian-Cerqueira";
+const mailMe = "mailto:idhac@cin.ufpe.br";
+
 export default function SeuNomePage() {
-  return <p>Atividade de Git e GitHub</p>;
+  return(
+    <div style={{
+      height: "80vh",
+      display: "flex",
+      justifyContent: "center",
+      alignItems: "center"
+    }}>
+      <div style={{ display: "flex", gap: "40px"}}>
+        <div style={{display: "flex", flexDirection: "column", alignItems: "center", gap: "15px"}}>
+          <div>
+            <ProfilePicture />
+          </div>
+          <div style={{display: "flex", gap: "12px"}}>
+            <RedirectionComponent url={githubURL} element={<SimpleButton caption={"GitHub"}/>} />
+            <RedirectionComponent url={mailMe} element={<SimpleButton caption={"Envie um email"}/>} />
+          </div>
+        </div>
+        <div>
+          <ProfileInfo />
+        </div>
+            </div>
+      </div>
+  );
+}
+
+const RedirectionComponent = ({ url, element }) => {
+  return (
+    <a href={url}>{element}</a>
+  )
+}
+
+const SimpleButton = ({ caption }) => {
+  const [buttonStyle, setButtonStyle] = useState({
+      backgroundColor: "rgb(2, 2, 68)",
+      color: "#f0f0f0",
+      borderRadius: "8px",
+      border: "1px solid transparent",
+      padding: "0.6em 1.2em",
+      fontSize: "1em",
+      fontWeight: 500,
+      fontFamily: "inherit",
+      cursor: "pointer",  
+    }
+  );
+
+  const handleButtonHoveIn = () => {
+    setButtonStyle(() => {
+      return {
+        ...buttonStyle,
+        backgroundColor: "#f0f0f0",
+        color: "rgb(2, 2, 68)",
+        border: "1px solid rgb(2, 2, 68)",
+        transition: "color 0.25s ease 0.1s"
+      }
+    })
+  }
+
+  const handleButtonHoveOut = () => {
+    setButtonStyle(() => {
+      return {
+        ...buttonStyle,
+        backgroundColor: "rgb(2, 2, 68)",
+        color: "#f0f0f0",
+        transition: "color 0.15s ease 0.1s"
+      }
+    })
+  }
+
+  return (
+    <button onMouseEnter={handleButtonHoveIn} onMouseLeave={handleButtonHoveOut} style={buttonStyle}>{caption}</button>
+  )
+}
+
+const ProfilePicture = () => {  
+  return (
+    <div>
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJsMPHdL5IJyrC3LqVkgVCslyvtvQFF59MWQ&s"></img>
+    </div>
+  )
+}
+
+const ProfileInfo = () => {
+  useEffect(() => {
+
+  });
+  
+  return (
+    <div>
+      <div>
+        <h1 style={{marginBottom: "0px"}}>Ian Cerqueira | Testes de software</h1>
+        <p style={{marginTop: "3px"}}>Ciência da Computação - CIn/UFPE</p>
+      </div>
+      <div style={{ marginTop: "20px" }}>
+        <table style={{ borderCollapse: "collapse", width: "100%", maxWidth: "700px" }} >
+          <thead>
+            <tr>
+              <th style={{ border: "2px solid black", padding: "12px", textAlign: "left", color: "rgb(2, 2, 68)" }} >
+                Interesses
+              </th>
+              <th style={{ border: "2px solid black", padding: "12px", textAlign: "left", color: "rgb(2, 2, 68)" }} >
+                Projetos
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td style={{ border: "2px solid black", padding: "10px", verticalAlign: "top" }} >
+                <ul style={{ margin: 0, paddingLeft: "20px", color: "rgb(2, 2, 68)" }}>
+                  <li>Backend</li>
+                  <li>Testes de software</li>
+                  <li>Arquitetura de sistemas</li>
+                </ul>
+              </td>
+              <td style={{ border: "2px solid black", padding: "10px 10px 5px 10px", verticalAlign: "top" }}>
+                <p style={{ marginTop: 0, color: "rgb(2, 2, 68)" }}>Digitalização da clínica de Fonoaudiologia da UFPE</p>
+                <p style={{color: "rgb(2, 2, 68)"}}>Nutre.AI</p>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  );
 }
