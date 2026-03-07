@@ -4,29 +4,39 @@ const githubURL = "https://github.com/Ian-Cerqueira";
 const mailMe = "mailto:idhac@cin.ufpe.br";
 
 export default function SeuNomePage() {
+  useEffect(() => {
+    document.title = "Ian Cerqueira | Perfil SEAL"
+  });
+  
   return(
-    <div style={{
-      height: "80vh",
-      display: "flex",
-      justifyContent: "center",
-      alignItems: "center"
-    }}>
-      <div style={{ display: "flex", gap: "40px"}}>
-        <div style={{display: "flex", flexDirection: "column", alignItems: "center", gap: "15px"}}>
-          <div>
-            <ProfilePicture />
-          </div>
-          <div style={{display: "flex", gap: "12px"}}>
-            <RedirectionComponent url={githubURL} element={<SimpleButton caption={"GitHub"}/>} />
-            <RedirectionComponent url={mailMe} element={<SimpleButton caption={"Envie um email"}/>} />
-          </div>
-        </div>
-        <div>
-          <ProfileInfo />
-        </div>
+    <div style={{display: "flex", flexDirection: "column", alignItems: "center"}}>
+      <div style={{
+        minHeight: "80vh",
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center"
+      }}>
+        <div style={{ display: "flex", gap: "40px"}}>
+          <div style={{display: "flex", flexDirection: "column", alignItems: "center", gap: "15px"}}>
+            <div>
+              <ProfilePicture />
             </div>
+            <div style={{display: "flex", gap: "12px"}}>
+              <RedirectionComponent url={githubURL} element={<SimpleButton caption={"GitHub"}/>} />
+              <RedirectionComponent url={mailMe} element={<SimpleButton caption={"Envie um email"}/>} />
+            </div>
+          </div>
+          <div>
+            <ProfileInfo />
+          </div>
+        </div>
       </div>
-  );
+
+      <div style={{marginTop: "-120px", width: "600px", maxWidth: "60vw"}}>
+        <RandomFacts />
+      </div>
+    </div>
+);
 }
 
 const RedirectionComponent = ({ url, element }) => {
@@ -86,10 +96,6 @@ const ProfilePicture = () => {
 }
 
 const ProfileInfo = () => {
-  useEffect(() => {
-
-  });
-  
   return (
     <div>
       <div>
@@ -127,4 +133,28 @@ const ProfileInfo = () => {
       </div>
     </div>
   );
+}
+
+const RandomFacts = () => {
+  const [fact, setFact] = useState([]);
+
+  useEffect(() => {
+    const factFetch = () => { fetch("https://catfact.ninja/fact")
+    .then(res => res.json())
+    .then(data => {
+      console.log(data.fact)
+      if(data.fact.length <= 110) { setFact(data.fact) }
+      else { factFetch() }
+    }) }
+
+    factFetch();
+  }, []);
+
+  return(
+    <div style={{textAlign: "center"}}>
+      <p style={{fontWeight: "bold"}}>Random fact about cats:</p>
+      <p>{fact}</p>
+    </div>
+  )
+
 }
