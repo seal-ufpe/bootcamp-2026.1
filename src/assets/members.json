@@ -13,6 +13,14 @@
       "slug": "joabhenrique"
     },
     {
+      "name": "Pedro Henrique",
+      "slug": "pedrohenrique"
+    },
+    {
+      "name": "Guilherme Siqueira",
+      "slug": "guilhermesiqueira"
+    },
+    {
       "name": "João Pedro Marins",
       "slug": "joaopedromarins"
     },
@@ -34,11 +42,19 @@
     },
     {
       "name": "Victor Lemos",
-      "slug": "victorlemos",
+      "slug": "victorlemos"
     },
     {
       "name": "Lavoisier Oliveira Cândido",
       "slug": "Lavoisier-Candido"
+    },
+    {
+      "name": "Lucas Mendonça",
+      "slug": "lucasmendonca"
+    },
+    {
+      "name": "Claudino Eduardo da Silva Neto",
+      "slug": "claudinoneto"
     }
   ]
 }
