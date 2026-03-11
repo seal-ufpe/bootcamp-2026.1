@@ -49,6 +49,10 @@
       "slug": "Lavoisier-Candido"
     },
     {
+      "name": "Joao Vitor Andrade de Barros",
+      "slug": "Joaovitor"
+    },
+    {
       "name": "Elinaldo Emanoel de Melo Macêdo",
       "slug": "emanoelmacedo"
     },
@@ -78,5 +82,6 @@
       "name": "Claudino Eduardo da Silva Neto",
       "slug": "claudinoneto"
     }
+    
   ]
 }
