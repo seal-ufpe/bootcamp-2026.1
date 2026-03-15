@@ -39,7 +39,7 @@ export default function LeviSerranoPage() {
     <div style={{ padding: '20px' }}>
       <Card 
         nome="Levi Serrano" 
-        bio="Estudante no 5º periodo de ciencia da computação no CIn participando do bootcamp SEAL"
+        bio="Estudante no 5º período de ciencia da computação no CIn participando do bootcamp SEAL"
       />
       
       <div style={{ textAlign: 'center' }}>
