@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 
+
 const styles = {
   card: {
     backgroundColor: "#0b1f3a",
