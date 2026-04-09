@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 
 const githubURL = "https://github.com/Ian-Cerqueira";
 const mailMe = "mailto:idhac@cin.ufpe.br";
-
+const pictureURL = "https://i.postimg.cc/Hxv5LG1L/Whats-App-Image-2026-04-09-at-11-46-25.jpg";
 export default function SeuNomePage() {
   useEffect(() => {
     document.title = "Ian Cerqueira | Perfil SEAL"
@@ -19,7 +19,7 @@ export default function SeuNomePage() {
         <div style={{ display: "flex", gap: "40px"}}>
           <div style={{display: "flex", flexDirection: "column", alignItems: "center", gap: "15px"}}>
             <div>
-              <ProfilePicture />
+              <ProfilePicture pfpURL={pictureURL} />
             </div>
             <div style={{display: "flex", gap: "12px"}}>
               <RedirectionComponent url={githubURL} element={<SimpleButton caption={"GitHub"}/>} />
@@ -87,10 +87,12 @@ const SimpleButton = ({ caption }) => {
   )
 }
 
-const ProfilePicture = () => {  
+const ProfilePicture = ({ pfpURL }) => {  
+  console.log("pfp", pfpURL);
+  
   return (
     <div>
-      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJsMPHdL5IJyrC3LqVkgVCslyvtvQFF59MWQ&s"></img>
+      <img src={pfpURL} width={150} height={200} style={{ border: "2px solid", borderColor: "rgb(2, 2, 68)" }}></img>
     </div>
   )
 }
