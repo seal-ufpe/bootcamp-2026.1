@@ -1,3 +1,4 @@
+
 import { useState, useEffect } from "react";
 
 export default function GioPage() {
@@ -42,11 +43,4 @@ function ColorButton({onClick}) {
             Trocar cor
         </button>
     );
-}
-
-
-
-=======
-export default function GiovannaPage() {
-  return <p>Atividade de Git e GitHub</p>;
 }
