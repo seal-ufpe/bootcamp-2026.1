@@ -67,9 +67,11 @@
     {
       "name": "João Victor Siqueira",
       "slug": "joaovictorsiqueira"
+    },
     { 
       "name": "Beatriz Mergulhão dos Anjos",
       "slug": "beatrizmergulhao"
+      },
     {
       "name": "Bianca Paes",
       "slug": "biancapaes"
@@ -85,7 +87,14 @@
     {
       "name": "Claudino Eduardo da Silva Neto",
       "slug": "claudinoneto"
+    },
+    {
+      "name": "Flávia Vitória",
+      "slug": "flaviavitoria"
+    },
+    {
+      "name": "Lucas Torres",
+      "slug": "lucastorres"
     }
-    
   ]
 }
