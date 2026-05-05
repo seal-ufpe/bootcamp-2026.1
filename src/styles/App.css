@@ -18,7 +18,5 @@ li a:hover {
 }
 
 a.back-link {
-  margin-top: 20px;
-  text-decoration: none;
-  color: #007bff;
+  display: none;
 }

@@ -9,9 +9,37 @@
       "slug": "josiasnetto"
     },
     {
+      "name": "Gabriel Cássio",
+      "slug": "gabrielcassio"
+    },
+    {
+      "name": "Joab Henrique",
+      "slug": "joabhenrique"
+    },
+    {
+      "name": "Pedro Henrique",
+      "slug": "pedrohenrique"
+    },
+    {
+      "name": "Guilherme Siqueira",
+      "slug": "guilhermesiqueira"
+    },
+    {
+      "name": "João Pedro Marins",
+      "slug": "joaopedromarins"
+    },
+    {
       "name": "Ian Cerqueira",
-      "slug": "iancerqueira"  
-    },  
+      "slug": "iancerqueira"
+    },
+    {
+      "name": "Amanda Trinity",
+      "slug": "amandatrinity"
+    },
+    {
+      "name": "Levi Serrano",
+      "slug": "leviserrano"
+    },
     {
       "name": "Victor Lemos",
       "slug": "victorlemos"
@@ -19,6 +47,66 @@
     {
       "name": "Lavoisier Oliveira Cândido",
       "slug": "Lavoisier-Candido"
+    },
+    {
+      "name": "Bernardo Belfort",
+      "slug": "bernardobelfort"
+    },
+    {
+      "name": "Joao Vitor Andrade de Barros",
+      "slug": "Joaovitor"
+    },
+    {
+      "name": "Elinaldo Emanoel de Melo Macêdo",
+      "slug": "emanoelmacedo"
+    },
+    {
+      "name": "Lucas Paiva",
+      "slug": "lucaspaiva"
+    },
+    {
+      "name": "João Victor Siqueira",
+      "slug": "joaovictorsiqueira"
+    },
+    { 
+      "name": "Beatriz Mergulhão dos Anjos",
+      "slug": "beatrizmergulhao"
+    },
+    {
+      "name": "Bianca Paes",
+      "slug": "biancapaes"
+    },
+    {
+      "name": "Kauanny Barros",
+      "slug": "kauannybarros"
+    },
+    {
+      "name": "Lucas Mendonça",
+      "slug": "lucasmendonca"
+    },
+    {
+      "name": "Claudino Eduardo da Silva Neto",
+      "slug": "claudinoneto"
+    },
+    {
+      "name": "Flávia Vitória",
+      "slug": "flaviavitoria"
+    },
+    {
+      "name": "Giovanna Silva",
+      "slug": "giovannasilva"
+    },
+    {
+      "name": "Lucas Torres",
+      "slug": "lucastorres"
+    },
+    {
+      "name": "Pedro Henrique",
+      "slug": "pedrohenrique"
+    },
+    {
+      "name": "Marcos Gabriel",
+      "slug": "marcosgabriel"
     }
   ]
 }
