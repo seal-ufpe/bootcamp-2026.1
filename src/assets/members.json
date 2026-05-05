@@ -9,34 +9,6 @@
       "slug": "josiasnetto"
     },
     {
-      "name": "Joab Henrique",
-      "slug": "joabhenrique"
-    },
-    {
-      "name": "Pedro Henrique",
-      "slug": "pedrohenrique"
-    },
-    {
-      "name": "Guilherme Siqueira",
-      "slug": "guilhermesiqueira"
-    },
-    {
-      "name": "João Pedro Marins",
-      "slug": "joaopedromarins"
-    },
-    {
-      "name": "Ian Cerqueira",
-      "slug": "iancerqueira"
-    },
-    {
-      "name": "Amanda Trinity",
-      "slug": "amandatrinity"
-    },
-    {
-      "name": "Gabriel Cássio",
-      "slug": "gabrielcassio"
-    },
-    {
       "name": "Levi Serrano",
       "slug": "leviserrano"
     },
@@ -49,8 +21,8 @@
       "slug": "Lavoisier-Candido"
     },
     {
-      "name": "Joao Vitor Andrade de Barros",
-      "slug": "Joaovitor"
+      "name": "Marcos Gabriel",
+      "slug": "marcosgabriel"
     },
     {
       "name": "Elinaldo Emanoel de Melo Macêdo",
@@ -80,10 +52,25 @@
       "name": "Lucas Mendonça",
       "slug": "lucasmendonca"
     },
+    { 
+      "name": "Beatriz Mergulhão dos Anjos",
+      "slug": "beatrizmergulhao"
+    },
     {
       "name": "Claudino Eduardo da Silva Neto",
       "slug": "claudinoneto"
+    },
+    {
+      "name": "Flávia Vitória",
+      "slug": "FlaviaVitoria"
+    },
+    {
+      "name": "Lucas Torres",
+      "slug": "lucastorres"
+    },
+    {
+      "name": "Pedro Henrique Machado",
+      "slug": "pedrohenrique"
     }
-    
   ]
 }
