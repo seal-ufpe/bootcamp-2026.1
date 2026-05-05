@@ -1,3 +1,4 @@
+<<<<<<< HEAD:src/pages/beatrizmergulhao.jsx
 import React from 'react';
 import { useState } from 'react';
 import { useEffect } from 'react';
@@ -99,4 +100,8 @@ export default function BeatrizMergulhao() {
             />
         </div>
     )
+=======
+export default function FlaviaPage() {
+  return <p>Atividade de Git e GitHub</p>;
+>>>>>>> main:src/pages/flaviavitoria.jsx
 }
