@@ -13,12 +13,40 @@
       "slug": "guilhermesiqueira"
     },
     {
+      "name": "Levi Serrano",
+      "slug": "leviserrano"
+    },
+    {
       "name": "Victor Lemos",
       "slug": "victorlemos"
     },
     {
       "name": "Lavoisier Oliveira Cândido",
       "slug": "Lavoisier-Candido"
+    },
+    {
+      "name": "Marcos Gabriel",
+      "slug": "marcosgabriel"
+    },
+    { 
+      "name": "Beatriz Mergulhão dos Anjos",
+      "slug": "beatrizmergulhao"
+    },
+    {
+      "name": "Claudino Eduardo da Silva Neto",
+      "slug": "claudinoneto"
+    },
+    {
+      "name": "Flávia Vitória",
+      "slug": "FlaviaVitoria"
+    },
+    {
+      "name": "Lucas Torres",
+      "slug": "lucastorres"
+    },
+    {
+      "name": "Pedro Henrique Machado",
+      "slug": "pedrohenrique"
     }
   ]
 }
