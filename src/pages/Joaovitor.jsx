@@ -1,4 +1,3 @@
-
-export default function FlaviaPage() {
+export default function Joaovitor() {
   return <p>Atividade de Git e GitHub</p>;
 }
